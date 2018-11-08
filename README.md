@@ -44,7 +44,7 @@ https://code.visualstudio.com/
 
 ## Materiały do projektu
 - Wizualizacja na platformie Zeplin: https://zpl.io/scene/Vx1dY8W
-- Zdjęcia i grafiki użyte w wizualicacji: [Link](assets/6BM_zdjecia.zip)
+- Zdjęcia i grafiki użyte w wizualizacji: [Link](assets/6BM_zdjecia.zip)
 - Teledysk do umieszczenia na stronie https://youtu.be/AstRXh-vKNI (lub własny, jeśli chcecie)
 - Animacja prezentująca efekt końcowy pracy domowej po wszystkich zajęciach
 
