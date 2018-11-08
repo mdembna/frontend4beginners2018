@@ -73,6 +73,6 @@ Zachęcamy do zadawania pytań przez [Issues](https://github.com/daftcode/fronte
 Tutaj dzień po zajęciach znajdziecie prezentacje oraz treść zadań domowych.
 
 1. Wprowadzenie do HTML ([Prezentacja](assets/Wyklad01_Wprowadzenie_do_HTML.pdf))
-    - Na bazie wizualizacji zaproponuj strukturę strony używając znaczników poznanych na wykładzie.
+    - Praca domowa: Na bazie wizualizacji zaproponuj strukturę strony używając znaczników poznanych na wykładzie.
 Napisany kod należy zapisać jako plik z rozszerzeniem .html (np. index.html) i umieścić na GitHubie.
 Staraj się projektować strukturę w taki sposób, żeby czytana od góry do dołu miała logiczny sens.
