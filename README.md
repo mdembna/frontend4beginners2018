@@ -17,7 +17,7 @@ Zajęcia są dla Was. Chcemy abyście wyciągneli z nich jak najwięcej. Dlatego
 Jesteśmy firmą technologiczną, taże pozbywamy się papieru i zaznaczmy obecność na zajęciach przez internet.
 - Podczas zajęć logujemy się na https://daftacademy.pl/
 - W prawym górnym roku klikamy w swoje Imię i Nazwisko
-- Wybieray opcję "Obesność"
+- Wybieramy opcję "Obecność"
 - Przepisujemy kod z ekranu projektora
 
 ## Edytor kodu
@@ -43,7 +43,7 @@ https://code.visualstudio.com/
 # Praca domowa - projekt strony internetowej
 
 ## Materiały do projektu
-- Wizualizacja na platformie Zeplin: https://zpl.io/2pleMoJ (wymagane założenie konta, dostęp uzyskacie przez zaproszenia mailowe)
+- Wizualizacja na platformie Zeplin: https://zpl.io/scene/Vx1dY8W
 - Teledysk do umieszczenia na stronie https://youtu.be/AstRXh-vKNI (lub własny, jeśli chcecie)
 - Animacja prezentująca efekt końcowy pracy domowej po wszystkich zajęciach
 
