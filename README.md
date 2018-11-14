@@ -77,3 +77,4 @@ Tutaj dzień po zajęciach znajdziecie prezentacje oraz treść zadań domowych.
 Napisany kod należy zapisać jako plik z rozszerzeniem .html (np. index.html) i umieścić na GitHubie.
 Staraj się projektować strukturę w taki sposób, żeby czytana od góry do dołu miała logiczny sens.
     - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit?usp=sharing))
+    - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/blob/master/przykladowe-rozwiazania/zadanie01/index.html))
