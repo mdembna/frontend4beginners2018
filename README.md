@@ -78,3 +78,11 @@ Napisany kod należy zapisać jako plik z rozszerzeniem .html (np. index.html) i
 Staraj się projektować strukturę w taki sposób, żeby czytana od góry do dołu miała logiczny sens.
     - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit?usp=sharing))
     - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/blob/master/przykladowe-rozwiazania/zadanie01/index.html))
+2. Podstawy CSS ([Prezentacja](https://github.com/daftcode/frontend4beginners2018/blob/master/assets/Wyklad02_Podstawy_CSS.pdf))
+    - Praca domowa: Na bazie poprzedniej pracy przygotuj w CSS'ie layout strony:
+      - Menu z logiem przyklejone do lewego górnego rogu a menu social media do lewego dolnego rogu (powinny być w tym samym miejscu ekranu niezależnie od przewijania strony, patrz: animacja wyżej)
+      - Każda główna sekcja strony (Home, About, Concerts, itd...) powinna mieć wysokość równą pełnej wysokości okna przeglądarki (lub wyższą, jeśli treść sekcji zajmuje więcej miejsca).
+      - Zaproponuj sposób ułożenia sekcji głównych, żeby dobrze się prezentowały na różnych szerokościach ekranu (można to testować rozszerzając i zwężając okno przeglądarki)
+      - W tym etapie nie ma znaczenia kolorystyka strony i tekstów, ale można sobie pokolorować sekcje w celach pomocniczych
+      - Jeżeli struktura HTMLowa z poprzedniego zadania utrudnia/uniemożliwia osiągnięcie pożądanego efektu, dokonaj stosownych modyfikacji starając się trzymać zasad omówionych na poprzednim wykładzie
+      
