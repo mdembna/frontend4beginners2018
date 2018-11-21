@@ -15,6 +15,8 @@ Napisany kod należy zapisać jako plik z rozszerzeniem .html (np. index.html) i
 Staraj się projektować strukturę w taki sposób, żeby czytana od góry do dołu miała logiczny sens.
     - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit?usp=sharing))
     - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/blob/master/przykladowe-rozwiazania/zadanie01/index.html))
+    - Omówienie błędów z pracy domowej ([link](https://github.com/daftcode/frontend4beginners2018/blob/master/omowienia-prac-domowych/Zadanie01_HTML_b%C5%82%C4%99dy.pdf))
+    
 2. Podstawy CSS ([Prezentacja](https://github.com/daftcode/frontend4beginners2018/blob/master/assets/Wyklad02_Podstawy_CSS.pdf))
     - Praca domowa: Na bazie poprzedniej pracy przygotuj w CSS'ie layout strony:
       - Menu z logiem przyklejone do lewego górnego rogu a menu social media do lewego dolnego rogu (powinny być w tym samym miejscu ekranu niezależnie od przewijania strony, patrz: animacja wyżej)
@@ -23,6 +25,28 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
       - W tym etapie nie ma znaczenia kolorystyka strony i tekstów, ale można sobie pokolorować sekcje w celach pomocniczych
       - Jeżeli struktura HTMLowa z poprzedniego zadania utrudnia/uniemożliwia osiągnięcie pożądanego efektu, dokonaj stosownych modyfikacji starając się trzymać zasad omówionych na poprzednim wykładzie
     - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit#gid=1779684322))
+    - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/tree/master/przykladowe-rozwiazania/zadanie02))
+    - Omówienie błędów z pracy domowej ([link](https://github.com/daftcode/frontend4beginners2018/blob/master/omowienia-prac-domowych/Zadanie02_CSS_b%C5%82%C4%99dy.pdf))
+    
+3. Let's CSS like a pro! ([Prezentacja](https://github.com/daftcode/frontend4beginners2018/blob/master/assets/Wyklad03_Lets_CSS_like_a_pro.pdf))
+    - Praca domowa: Bazując na wizualizacji (https://zpl.io/scene/Vx1dY8W) zakoduj warstwę wizualną strony:
+        - Zbuduj finalną strukturę wszystkich sekcji strony
+            * postaraj się dobrać adekwatną technikę do ułożenia danej sekcji (flexbox, position relative/absolue, inline-block)
+        - Zdefiniuj wygląd tekstów na stronie, zwracając uwagę na:
+            * Kolor
+            * Rozmiar tekstu
+            * Pogrubienie lub brak pogrubienia
+            * Letter spacing
+            * Line-height
+            * Opacity
+        - Spraw, aby tło strony pozostawało w tym samym miejscu, niezależnie od paska przewijania
+            * Do osiągnięcia tego efektu zapoznaj się z właściwością "background-attachment"
+            * Pożądany efekt możesz zobaczy na animacji w materiałach do pracy domowej (https://github.com/daftcode/frontend4beginners2018/blob/master/README.md#materia%C5%82y-do-projektu)
+        - Ostyluj elementy formularza:
+            * Przyciski (na razie tylko stan "default" z wizualizacji, pozostałe stany obsłużymy na kolejnych zajęciach)
+            * Pola tekstowe
+            * Labelki
+        - Zadbaj o odpowiednie marginesy i paddingi we wszystkich sekcjach strony (odległości od krawędzi ekranu, odległości nagłówków od treści, itp)
 
 # Praca domowa - projekt strony internetowej
 
