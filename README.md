@@ -22,6 +22,7 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
       - Zaproponuj sposób ułożenia sekcji głównych, żeby dobrze się prezentowały na różnych szerokościach ekranu (można to testować rozszerzając i zwężając okno przeglądarki)
       - W tym etapie nie ma znaczenia kolorystyka strony i tekstów, ale można sobie pokolorować sekcje w celach pomocniczych
       - Jeżeli struktura HTMLowa z poprzedniego zadania utrudnia/uniemożliwia osiągnięcie pożądanego efektu, dokonaj stosownych modyfikacji starając się trzymać zasad omówionych na poprzednim wykładzie
+    - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit#gid=1779684322))
 
 # Praca domowa - projekt strony internetowej
 
