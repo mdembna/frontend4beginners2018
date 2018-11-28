@@ -47,6 +47,7 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
             * Pola tekstowe
             * Labelki
         - Zadbaj o odpowiednie marginesy i paddingi we wszystkich sekcjach strony (odległości od krawędzi ekranu, odległości nagłówków od treści, itp)
+4. Responsive Web Design ([Prezentacja](https://github.com/daftcode/frontend4beginners2018/blob/master/assets/Wyklad04_Responsive_web_design.pdf))
 
 # Praca domowa - projekt strony internetowej
 
