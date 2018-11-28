@@ -48,6 +48,20 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
             * Labelki
         - Zadbaj o odpowiednie marginesy i paddingi we wszystkich sekcjach strony (odległości od krawędzi ekranu, odległości nagłówków od treści, itp)
 4. Responsive Web Design ([Prezentacja](https://github.com/daftcode/frontend4beginners2018/blob/master/assets/Wyklad04_Responsive_web_design.pdf))
+    - Praca domowa: Zmodyfikuj swój projekt, aby zachowywał się w sposób responsywny. W tym celu:
+        - Umieść w znaczniku `<head>` strony odpowiedni meta tag, żeby lepiej wspierać wersję mobilną strony
+        - Przetestuj zachowanie swojej strony:
+            * zmieniając rozmiary okna przeglądarki (głównie szerokość), obserwuj, czy elementy strony nie zachowują się w sposób niepożądany (nie rozjeżdżają się, nie nachodzą na siebie, tekst nie łamie się w brzydki sposób)
+            * dodatkowo możesz uruchomić symulator urządzenia mobilnego w Chrome Dev Tools (instrukcja: https://developers.google.com/web/tools/chrome-devtools/device-mode/)
+        - Postaraj się poprawić jak najwięcej niepoprawnie zachowujących się elementów używając dotychczasowo poznanych technik:
+            * elastycznych kontenerów
+            * zawijania tekstu
+            * pozycjonowania
+            * flex-wrap
+        - Jeśli mimo powyższych zabiegów niektóre sekcje nie będą się dobrze prezentować (np. nie zmieszczą się na szerokość ekranu), zaproponuj przedziały Media Query, które pozwolą obsłużyć te sytuacje
+            * przykładowe trzy przedziały: dla smartfona, dla małego laptopa, dla dużego monitora Full HD
+            * na tym etapie możesz śmiało dokonywać zmian w projekcie graficznym w celu uzyskania estetycznego i użytecznego wyglądu strony
+        - Uwaga - W przypadku wideo z YouTube uzyskanie idealnego wyglądu może wymagać zaawansowanych technik, dlatego w ramach niezbędnego minimum spraw, aby wideo mieściło się na szerokości strony.
 
 # Praca domowa - projekt strony internetowej
 
