@@ -65,6 +65,7 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
             * przykładowe trzy przedziały: dla smartfona, dla małego laptopa, dla dużego monitora Full HD
             * na tym etapie możesz śmiało dokonywać zmian w projekcie graficznym w celu uzyskania estetycznego i użytecznego wyglądu strony
         - Uwaga - W przypadku wideo z YouTube uzyskanie idealnego wyglądu może wymagać zaawansowanych technik, dlatego w ramach niezbędnego minimum spraw, aby wideo mieściło się na szerokości strony.
+    - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/tree/master/przykladowe-rozwiazania/zadanie04))
 
 # Praca domowa - projekt strony internetowej
 
