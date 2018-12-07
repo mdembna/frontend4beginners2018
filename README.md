@@ -50,6 +50,7 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
     - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit#gid=1126655829))
     - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/tree/master/przykladowe-rozwiazania/zadanie03))
     - Omówienie błędów z pracy domowej ([link](https://github.com/daftcode/frontend4beginners2018/blob/master/omowienia-prac-domowych/Zadanie03_CSSvol2_b%C5%82%C4%99dy.pdf))
+
 4. Responsive Web Design ([Prezentacja](https://github.com/daftcode/frontend4beginners2018/blob/master/assets/Wyklad04_Responsive_web_design.pdf))
     - Praca domowa: Zmodyfikuj swój projekt, aby zachowywał się w sposób responsywny. W tym celu:
         - Umieść w znaczniku `<head>` strony odpowiedni meta tag, żeby lepiej wspierać wersję mobilną strony
@@ -67,6 +68,14 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
         - Uwaga - W przypadku wideo z YouTube uzyskanie idealnego wyglądu może wymagać zaawansowanych technik, dlatego w ramach niezbędnego minimum spraw, aby wideo mieściło się na szerokości strony.
     - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit#gid=425981761))
     - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/tree/master/przykladowe-rozwiazania/zadanie04))
+
+5. Be aWWWesome ([Prezentacja](https://github.com/daftcode/frontend4beginners2018/blob/master/assets/Wyklad05_Be_aWWWesome.pdf))
+    - Praca domowa: Dodaj do strony efekty wizualne:
+        - Po najechaniu myszką na członków zespołu ich wizerunki powinny zostać podświetlone a opisy pod nimi stać się widoczne
+        - Podświetl przyciski (hover, focus, active) oraz linki dla różnych stanów (hover, focus)
+        - Po najechaniu myszką na zdjęcia z galerii powinny się powiększyć
+        - Zmiany wyglądu z powyższych punktów powinny zachodzić w sposób płynny
+        - Pożądany efekt można zaobserwować w animacji z materiałów do projektu
 
 # Praca domowa - projekt strony internetowej
 
