@@ -76,6 +76,10 @@ Staraj się projektować strukturę w taki sposób, żeby czytana od góry do do
         - Po najechaniu myszką na zdjęcia z galerii powinny się powiększyć
         - Zmiany wyglądu z powyższych punktów powinny zachodzić w sposób płynny
         - Pożądany efekt można zaobserwować w animacji z materiałów do projektu
+    - Wyniki pracy domowej ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit#gid=1520718741))
+    - Przykładowe rozwiązanie ([link](https://github.com/daftcode/frontend4beginners2018/tree/master/przykladowe-rozwiazania/zadanie05))
+
+6. Wyniki pracy domowej - zestawienie ogólne ([link](https://docs.google.com/spreadsheets/d/1BMQbbnORhr-1lBsGiyHfg-J6rZVIQ0LQgIpcYjc8AOA/edit#gid=924665370))
 
 # Praca domowa - projekt strony internetowej
 
