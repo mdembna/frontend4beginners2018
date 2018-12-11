@@ -1,0 +1,651 @@
+/*
+Przeglądarki internetowe nadają znacznikom HTML wartości początkowe,
+które się różnią w zależności od producenta (np. Chrome, Firefox, Opera, Internet Explorer, Microsoft Edge).
+Dlatego popularną praktyką jest tworzenie tzw. resetów, 
+czyli plików CSS zawierających reguły, które nadpisują te wartości, 
+aby były one jednolite niezalenie od przeglądarki.
+
+Więcej na ten temat: https://cssreset.com/what-is-a-css-reset/
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* 
+    "background-image" - ustawiamy obrazek z projektu graficznego jako tło całej witryny
+    "background-size: cover" sprawia, że obrazek tła będzie skalowany tak, żeby wypełniać ekran w całości
+        niezależnie od proporcji ekranu
+    ""
+    
+    */
+    background-image: url('./images/background.svg');
+    /* 
+    */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ZAGADNIENIE PONADPROGRAMOWE
+
+Rekomendowany zestaw właściwości, które pozwalają na ukrycie tekstu w taki sposób,
+że będzie niewidoczny do standardowego użytkownika, a czytniki ekranowe wciąż będą go czytać.
+
+Więcej na ten temat: https://webaim.org/techniques/css/invisiblecontent/
+*/
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* 
+######################################
+TYPOGRAFIA
+######################################
+*/
+
+body {
+    color: rgba(204, 200, 255, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+a {
+    color: #EF008E;
+    text-decoration: none;
+    opacity: .6;
+    transition: opacity .2s;
+}
+
+a:hover, a:focus {
+    opacity: 1;
+}
+
+a:active {
+    opacity: .8;   
+}
+
+/* 
+######################################
+PRZYCISKI
+######################################
+*/
+
+.button {
+    padding: 7px 15px;
+    border-radius: 3px;
+    background-color: rgba(204, 200, 255, 0.1);
+    border-color: rgba(204, 200, 255, 0.1);
+
+    color: rgba(204, 200, 255, 0.8);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    transition: background-color .1s, border-color .1s;
+}
+
+.button:hover, .button:focus {
+    background-color: rgba(204, 200, 255, 0.2);
+}
+
+.button:focus {
+    border-color: rgba(204, 200, 255, 0.5);
+    outline: none;
+}
+
+.button:active {
+    background-color: rgba(204, 200, 255, 0.05);
+    color: rgba(204, 200, 255, 0.6);
+}
+
+/* 
+######################################
+FORMULARZE
+######################################
+*/
+
+.form__field {
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.form__input {
+    display: block;
+    height: 35px;
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(219, 216, 251, 0.1);
+}
+
+@media screen and ( max-width: 1024px ) {
+    .form__input {
+        width: 100%;
+    }
+}
+
+/* 
+######################################
+GŁÓWNY LAYOUT STRONY
+######################################
+*/
+
+/* 
+Ustawiając sekcje nagłówka i stopki w pozycji 'fixed' sprawiamy,
+że niezależnie od pozycji paska przewijania elementy te będą znajdowały się
+w tej samej pozycji względem okna przeglądarki. 
+Natomiast pozycję tę ustawiamy za pomocą parametrów 'top', 'bottom', 'right', 'left'.
+*/
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+/*
+Lewy margines ustawiony na kontenerze z główną zawartością strony sprawia,
+że nie będzie ona nachodzić na nagłówek i stopkę niezależnie od pozycji paska przewijania.
+Na projekcie graficznym sekcja menu ma szerokość około 170px i jest oddalona od krawędzi ekranu
+o 50px, więc można założyć, że 220px marginesu będzie wartością stosunkowo bezpieczną.
+Z kolei spady (padding) nadane na kontener wyznaczają minimalną odległość, na jaką będzie oddalona
+treść strony od otaczających ją granic kontenera (wartość "0 10%" jest 
+skrótem od padding-top: 0, padding-bottom: 0, padding-left: 10%, padding-right: 10%).
+Więcej skrótów paddingu: https://developer.mozilla.org/en-US/docs/Web/CSS/padding
+Właściwość "text-align: right" przykleja zawartość do prawej strony
+(oddziałuje na elementy, które są elementami inline'owymi, np. tekst, znaczniki <a>, <span> czy elementy z nadanym stylem "display: inline-block").
+*/
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+}
+
+@media screen and ( max-width: 1280px ) {
+    .page-header {
+        position: static;
+        padding: 30px 0;
+        text-align: center;
+    }
+    .page-content {
+        margin-left: 0;
+    }
+
+    .page-footer {
+        position: static;
+    }
+}
+
+/* 
+######################################
+NAWIGACJA
+######################################
+*/
+
+.page-navigation__items {
+    padding-top: 15px;
+}
+
+.page-navigation__item a {
+    color: rgba(239, 0, 142, 0.6);
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6.7px;
+}
+
+@media screen and ( min-width: 1025px ) and ( max-width: 1280px ) {
+    .page-navigation__item {
+        display: inline-block;
+    }
+
+    .page-navigation__item {
+        margin: 0 20px;
+    }
+}
+
+/* 
+######################################
+LINKI DO SOCIAL MEDIA
+######################################
+*/
+
+.social-links__item + .social-links__item {
+    margin-top: 15px;
+}
+
+.social-links__item img {
+    width: 20px;
+    height: 20px;
+    opacity: .6;
+    transition: opacity .2s;
+}
+
+.social-links__link:hover img,
+.social-links__link:focus img {
+    opacity: 1;
+}
+
+.social-links__link:active img {
+    opacity: .8;
+}
+
+@media screen and ( max-width: 1280px ) {
+    .social-links {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .social-links__item {
+        display: inline-block;
+    }
+
+    .social-links__item + .social-links__item {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+}
+
+/* 
+######################################
+STYLE WSPÓLNE DLA WSZYSTKICH SEKCJI
+######################################
+*/
+
+/* 
+Projekt graficzny zakłada, że każda sekcja strony będzie wypełniać całą wysokość okna przeglądarki
+lub więcej, jeśli zawartość danej sekcji jest wyższa. Dlatego świetnym rozwiązaniem
+będzie użycie jednostki "vh", która oznacza 1% wysokości okna przeglądarki z właściwością "min-height",
+która wymusza wysokość elementu na zadaną wartość lub wyższą.
+
+Następnie sekcje zostają zdefiniowane jako kontener flexbox (display: flex) co pozwala
+na większą kontrolę nad zachowaniem elementów wewnątrz.
+Zakładamy, ze każda sekcja strony ma bazową strukturę w formacie:
+
+    <section class="content-section">
+        <h2 class="content-section__header">{nagłówek sekcji}</h2>
+        <div class="content-section__body">
+            {zawartość sekcji}
+        </div>
+    </section>
+
+Ustawienie wartości flex-direction na "column" sprawia, że wszystkie elementy umieszczone
+bezpośrednio w "content-section" (czyli "content-section__header" oraz "content-section__body")
+będą ułożone jedno pod drugim.
+
+Pole "justify-content" definiuje ułożenie elementów wewnątrz kontenera wzdłuż jego osi
+(dla "flex-direction: column" jest to oś pionowa, dla "flex-direction: row" - oś pozioma).
+W naszym przypadku ustawiamy wartość "center", czyli wyśrodkowujemy elementy w pionie.
+
+"Align-items" działa podobnie do powyższego, ale ustawia elementy w osi prostopadłej do kierunku flex-direction.
+Ponadto tak samo faktyczny kierunek uzależniony jest od flex-direction.
+
+Wartość flex-grow: 1 na elemencie "content-section__body" sprawia, że będzie się on rozrastał
+zajmując puste miejsce niezajęte przez sąsiadujące mu elementy.
+
+Więcej szczegółów na temat działania Flexbox można znaleźć na: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+.content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .content-section {
+        min-height: 0;
+        padding-bottom: 100px;
+    }
+}
+
+.content-section__header {
+    margin-bottom: 60px;
+    color: #EF008E;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+}
+
+.content-section__body {
+    flex-grow: 1;
+}
+
+/* 
+######################################
+SEKCJA "HOME"
+######################################
+*/
+
+.content-section.home-section {
+    align-items: center;
+}
+
+.band-members {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.band-members__item {
+    position: relative;
+    cursor: pointer;
+}
+
+.band-members__image {
+    opacity: .5;
+    transition: opacity .3s;
+}
+
+.band-members__desc {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.band-members__item:hover .band-members__image,
+.band-members__item:hover .band-members__desc {
+    opacity: 1;
+}
+
+.band-members__name {
+    margin: 0;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+    white-space: nowrap;
+}
+
+.band-members__role {
+    margin: 3px 0 0 0;
+    color: rgba(204, 200, 255, 0.5);
+    letter-spacing: 3.5px;
+}
+
+@media screen and ( min-width: 1025px ) and ( max-width: 1280px ) {
+    .content-section.home-section {
+        justify-content: flex-start;
+        padding-top: 20vh;
+    }
+}
+
+@media screen and ( max-width: 1024px ) {
+    .band-members {
+        flex-direction: column;
+    }
+
+    .band-members__image {
+        margin: 50px 0 10px;
+    }
+
+    .band-members__desc {
+        position: static;
+        transform: none;
+        text-align: center;
+        opacity: 1;
+    }
+}
+
+/* 
+######################################
+SEKCJA "ABOUT"
+######################################
+*/
+
+/*
+Żeby ustawić opis zespołu w rogu zdjęcia, można zastosować popularną sztuczkę z pozycjonowaniem.
+Wykorzystuje ona właściwość elementów z "position: absolute", których położenie jest ustalane
+względem najbliższego mu rodzica, który jest pozycjonowany (ma ustawione "position" na inne
+niż "static", czyli "absolute", "relative", "fixed" lub "sticky").
+
+Dlatego gdy na jego rodzica "about" ustawimy "position: relative" (które bez parametrów
+dodatkowych top, left, bottom, right, nic nie zmienia w jego pozycji), to zawarty w nim
+element "about__desc" ustawia się absolutnie względem niego.
+
+Gdy dodamy wartości "left: -290px" i "bottom: -115px", wtedy "about__desc" będzie wystawać
+z lewego dolnego rogu "about" dokładnie o te odległości.
+
+Natomiast aby nie dopuścić do sytuacji, że wystający "about__desc" nachodził
+na sąsiadujące sekcje na stronie, nadajemy "about" marginesy adekwatne do odległości
+podane przy pozycjonowaniu "about_desc".
+*/
+.about {
+    position: relative;
+    margin-left: 290px;
+    margin-bottom: 115px;
+}
+
+.about__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+}
+
+.about__desc-header {
+    margin-bottom: 30px;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+}
+
+.about__desc {
+    position: absolute;
+    left: -290px;
+    bottom: -115px;
+    width: 380px;
+    padding: 30px;
+    background-color: #25072e;
+    border-bottom: 3px solid #EF008E;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .about {
+        margin: 0;
+    }
+
+    .about__desc {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* 
+######################################
+SEKCJA "CONCERTS"
+######################################
+*/
+
+.concerts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.concerts__item {
+    flex-basis: 50%;
+    padding: 0 0 45px 55px;
+}
+
+.concerts__image {
+    max-width: 100%;
+    border-bottom: 3px solid #EF008E;
+}
+
+.concerts__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.concerts__info-base {
+    flex-grow: 1;
+}
+
+.concerts__date {
+    margin: 0;
+    color: #CCC8FF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.8px;
+}
+
+.concerts__location {
+    margin: 0;
+    letter-spacing: 3.8px;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .concerts {
+        display: block;
+        width: auto;
+    }
+
+    .concerts__item {
+        padding-left: 0;
+    }
+}
+
+/* 
+######################################
+SEKCJA "VIDEO"
+######################################
+*/
+
+.embedded-video {
+    border-top: 3px solid #EF008E;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .embedded-video {
+        max-width: 100%;
+    }
+}
+
+/* 
+######################################
+SEKCJA "PHOTOS"
+######################################
+*/
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.gallery__item {
+    flex-basis: 33.3%;
+    padding: 0 0 20px 20px;
+}
+
+.gallery__image {
+    max-width: 100%;
+    border-top: 3px solid #EF008E;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.gallery__image:hover {
+    transform: scale(1.05);
+}
+
+@media screen and ( max-width: 1024px ) {
+    .gallery {
+        display: block;
+        width: auto;
+    }
+
+    .gallery__item {
+        padding-left: 0;
+    }
+}
+
+/* 
+######################################
+SEKCJA "CONTACT"
+######################################
+*/
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact__image img {
+    max-width: 100%;
+}
+
+.contact__address {
+    padding: 70px;
+    font-style: normal;
+}
+
+.contact__form {
+    flex-basis: 50%;
+    padding-top: 40px;
+}
+
+.contact__form .button {
+    margin-top: 20px;
+}
+
+@media screen and ( max-width: 1024px ) {
+    .contact {
+        display: block;
+    }
+
+    .contact__address {
+        padding: 30px 0 0;
+    }
+
+    .contact__form {
+        padding-top: 30px;
+    }
+}
